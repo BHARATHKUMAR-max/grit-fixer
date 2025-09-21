@@ -1,73 +1,90 @@
-# Welcome to your Lovable project
+CompleteHub
 
-## Project info
+CompleteHub is a modern web application built with React, Vite, Tailwind CSS, and Supabase. It provides a fast and responsive UI with a developer-friendly setup using Bun as the package manager.
 
-**URL**: https://lovable.dev/projects/17a7f268-bc81-4ec1-bc35-df976a192ecc
+🚀 Tech Stack
 
-## How can I edit this code?
+Frontend: React + Vite
 
-There are several ways of editing your application.
+Styling: Tailwind CSS
 
-**Use Lovable**
+UI Components: Radix UI + Shadcn UI
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/17a7f268-bc81-4ec1-bc35-df976a192ecc) and start prompting.
+Backend / Database: Supabase
 
-Changes made via Lovable will be committed automatically to this repo.
+Package Manager: Bun (⚡ fast alternative to npm/yarn)
 
-**Use your preferred IDE**
+Linting: ESLint + Prettier
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+📂 Project Structure
+grit-fixer/              # Repo directory
+├── public/              # Static assets
+├── src/                 # Application source code
+│   ├── components/      # Reusable UI components
+│   ├── pages/           # Page-level components
+│   ├── hooks/           # Custom React hooks
+│   ├── lib/             # Utility functions & helpers
+│   └── main.tsx         # App entry point
+├── supabase/            # Supabase configuration
+├── index.html           # App HTML entry
+├── package.json         # Project metadata & scripts
+├── vite.config.ts       # Vite configuration
+├── tailwind.config.ts   # Tailwind config
+└── .env                 # Environment variables
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+⚙️ Installation
 
-Follow these steps:
+Make sure you have Bun installed:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+curl -fsSL https://bun.sh/install | bash
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+Clone the repo and install dependencies:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+git clone https://github.com/your-username/complatehub.git
+cd grit-fixer
+bun install
 
-**Edit a file directly in GitHub**
+🛠️ Development
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Run the app locally:
 
-**Use GitHub Codespaces**
+bun run dev
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+📦 Build
 
-## What technologies are used for this project?
+Create a production build:
 
-This project is built with:
+bun run build
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
 
-## How can I deploy this project?
+Preview the build:
 
-Simply open [Lovable](https://lovable.dev/projects/17a7f268-bc81-4ec1-bc35-df976a192ecc) and click on Share -> Publish.
+bun run preview
 
-## Can I connect a custom domain to my Lovable project?
 
-Yes, you can!
+The build output will be inside the dist/ directory.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+🔑 Environment Variables
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Create a .env file in the root directory and add your variables:
+
+VITE_SUPABASE_URL=your-supabase-url
+VITE_SUPABASE_ANON_KEY=your-supabase-anon-key
+
+
+(Replace with your actual Supabase project values.)
+
+🧹 Linting
+
+Check code quality with ESLint:
+
+bun run lint
+
+📜 License
+
+This project is licensed under the MIT License.
+
+✨ This way, the repo stays as grit-fixer/ but the actual project identity is CompleteHub.
+
+Do you also want me to include a "Getting Started" quick guide section (with screenshots and usage examples) in the README to make it more user-friendly?
